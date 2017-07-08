@@ -1,4 +1,6 @@
 function sumStrings(a, b){
+  //return (parseInt(a)+parseInt(b)).toString();
+
   // reversing test strings
   a = a.split('').reverse();
   b = b.split('').reverse();
