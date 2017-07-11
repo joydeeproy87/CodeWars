@@ -1,3 +1,3 @@
 function descendingOrder(n) {
-  var n = n.split("").map(Number).sort(function(a,b) { return b-a; });
+  return +n.toString().split("").sort().reverse().join("");
 }
