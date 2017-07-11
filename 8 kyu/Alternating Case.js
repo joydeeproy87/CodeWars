@@ -1,10 +1,9 @@
-String.prototype.toAlternatingCase = function (s) {
-  for (var i = 0; i < s.length; i++) {
-    if(s.charCodeAt(i) >= 65 && s.charCodeAt(i) <= 90) {
-      s[i] = s[i].toUpperCase();
-    } else {
-      s[i] = s[i].toLowerCase();
-    }
+String.prototype.toAlternatingCase = function () {
+  let i, letter = "", flipped = "";
+  for (i = 0; i < this.length; i++) {
+    letter = this[i];
+    letter = (letter.charCodeAt() >= 65 && letter.charCodeAt() <= 90) ? letter.toLowerCase() : letter.toUpperCase();
+    flipped += letter;
   }
-  return s;
+  return flipped;
 }
