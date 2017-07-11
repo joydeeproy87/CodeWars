@@ -6,6 +6,5 @@ function encode(str, key) {
     decoded.push(cypher.indexOf(str[i])+1);
     console.log(decoded);
   }
-
   var key = key.split();
 }
