@@ -1,24 +1,12 @@
 var sum_pairs = function sum_pairs(ints, s) {
-  var film = [];
-  var pair = [];
-  var holder;
+  var seen = {};
+  var i = 0;
+  var length = ints.length;
 
-  for (var i = 0; i < ints.length; i++) {
-    holder = s - ints[i];
-    for (var j = 0; j < ints.length; j++) {
-      if (holder == ints[j] && i !== j && i - j > 0) {
-        var indices = i + j;
-        var distance = i - j;
-        film.push([distance, indices, [holder, ints[i]]]);
-      }
+  for (i; i < length; ++i) {
+    if (seen[s - ints[i]]) {
+      return [s - ints[i], ints[i]];
     }
-  }
-  if (film.length == 0) {
-    return film[1];
-  } else {
-    pair = film.sort(function (a, b) {
-      return a[0] - b[0];
-    });
-    return pair[0][2];
+    seen[ints[i]] = true;
   }
 };
