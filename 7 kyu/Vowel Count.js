@@ -1,3 +1,9 @@
+// option 1
+function getCount(str) {
+  return (str.match(/[aeiou]/ig) || []).length;
+}
+
+// option 2
 function getCount(str) {
   var vowelsCount = 0;
   var str = str.toLowerCase().split('');
