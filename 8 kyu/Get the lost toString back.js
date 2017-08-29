@@ -1,3 +1,3 @@
-var _originalToString = function(foo) {
+const _originalToString = function(foo) {
   return Function.toString.call(foo);
 };
