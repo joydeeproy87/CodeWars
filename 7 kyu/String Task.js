@@ -1,5 +1,4 @@
 function stringTask(s) {
-	let delVow = s.replace(/[aeiou]/ig, '');
-	let insChar = delVow.replace(/[^aeiou]/ig, '.$1');
-	let uppCons = insChar.replace(/[^AEIOU]/g, '');
+	s = s.replace(/[aeiouy]/gi, '').toLowerCase();
+	return !s.length ? '' : '.' + s.split('').join('.');
 }
