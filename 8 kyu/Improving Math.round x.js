@@ -20,7 +20,14 @@
 
 
 
+// option 1
 Math.roundTo = function (number, precision) {
 	precision = Math.pow(10, precision);
 	return parseFloat(Math.round(number * precision) / precision);
+}
+
+
+// option 2
+Math.roundTo = function (number, precision) {
+	return Number(number.toFixed(precision));
 }
