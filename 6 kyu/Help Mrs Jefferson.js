@@ -21,7 +21,11 @@
 // You may see more example tests in the Example Tests Cases Box.
 
 
-
 function shortestArrang(n) {
-  return [];
+  for (let l = 2; l * l < 2 * n; l++) {
+    if (2 * (n / l % 1) === (l + 1) % 2) {
+      return [...Array(l)].map((_, i) => (n / l) + (l - 1) / 2 - i);
+    }
+  }
+  return [-1];
 }
