@@ -1,6 +1,6 @@
 function findNeedle(haystack) {
-  var position = haystack.indexOf("needle");
+  const position = haystack.indexOf('needle');
   if (position > -1) {
-    return "found the needle at position " + position;
+    return `found the needle at position ${position}`;
   }
 }
