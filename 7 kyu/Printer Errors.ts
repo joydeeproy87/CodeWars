@@ -16,23 +16,10 @@
 // s="aaaxbbbbyyhwawiwjjjwwm"
 // error_printer(s) => "8/22"
 
+
 // option 1
-function printerError(s) {
-   let length = s.length;
-   let count = 0;
-   // RegExp for the characters which are not a-m
-   let regexP = new RegExp('[^a-m]');
-   for (let i = 0; i < length; i++) {
-      if (regexP.test(s[i]) == true) {
-         console.log(s[i]);
-         count = count + 1;
-      }
+export class G964 {
+   public static printerError(s: string): string {
+      return s.replace(/[a-m]/g, '').length + '/' + s.length;
    }
-   return `${count}/${length}`;
-}
-
-
-// option 2
-function printerError(s) {
-   return s.replace(/[a-m]/ig, '').length + '/' + s.length;
 }
