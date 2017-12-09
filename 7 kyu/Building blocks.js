@@ -48,7 +48,7 @@ class Block {
 		return this.h;
 	}
 	getVolume() {
-		let { l, w, h} = this;
+		let { l, w, h } = this;
 		return w * l * h;
 	}
 	getSurfaceArea() {
