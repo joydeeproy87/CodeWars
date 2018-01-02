@@ -22,6 +22,19 @@
 //
 // After you complete this kata, you may try yourself at Decode the Morse code, advanced.
 
-decodeMorse = function (argument) {
-	/* body... */
-}
+
+decodeMorse = function(morseCode) {
+   var decodeString = '';
+   var morseCodeWords = morseCode.split('   ');
+   for (var i in morseCodeWords) {
+      var morseCodeArray = morseCodeWords[i].split(' ');
+      for (var j in morseCodeArray) {
+         if (MORSE_CODE[morseCodeArray[j]] !== undefined) {
+            decodeString += MORSE_CODE[morseCodeArray[j]];
+         }
+      }
+      decodeString += ' ';
+   }
+   decodeString = decodeString.trim();
+   return decodeString;
+};
