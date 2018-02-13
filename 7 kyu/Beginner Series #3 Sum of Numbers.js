@@ -12,6 +12,18 @@
 
 // option 1
 function GetSum(a, b) {
+	const max = Math.max(a, b);
+	let current = Math.min(a, b);
+	let sum = 0;
+	while (current <= max) {
+		sum += current;
+		current++;
+	}
+	return a === b ? a : sum;
+}
+
+// option 2
+function GetSum(a, b) {
 	let total = 0;
 	if (a === b) {
 		return a;
@@ -28,16 +40,4 @@ function GetSum(a, b) {
 		}
 		return total;
 	}
-}
-
-// option 2
-function GetSum(a, b) {
-	const max = Math.max(a, b);
-	let current = Math.min(a, b);
-	let sum = 0;
-	while (current <= max) {
-		sum += current;
-		current++;
-	}
-	return a === b ? a : sum;
 }
