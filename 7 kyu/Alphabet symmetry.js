@@ -4,4 +4,6 @@
 
 // Input will consist of alphabet characters, both uppercase and lowercase. No spaces.
 
-function solve(arr) {};
+function solve(arr) {
+	console.log(arr);
+};
