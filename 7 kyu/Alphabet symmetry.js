@@ -5,5 +5,13 @@
 // Input will consist of alphabet characters, both uppercase and lowercase. No spaces.
 
 function solve(arr) {
-	console.log(arr);
+	let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+
+	return arr.map(function (word) {
+		let counter = 0;
+		for (let i = 0; i < array.length; i++) {
+			const element = array[i];
+
+		}
+	})
 };
