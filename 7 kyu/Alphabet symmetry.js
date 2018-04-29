@@ -6,7 +6,6 @@
 
 function solve(arr) {
 	let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-
 	return arr.map(function (word) {
 		let counter = 0;
 		for (let i = 0; i < array.length; i++) {
@@ -14,4 +13,5 @@ function solve(arr) {
 
 		}
 	})
+	return arr.map(x => x.toLowerCase());
 };
