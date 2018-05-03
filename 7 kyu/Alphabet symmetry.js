@@ -4,14 +4,18 @@
 
 // Input will consist of alphabet characters, both uppercase and lowercase. No spaces.
 
+// option 1
 function solve(arr) {
-	let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-	return arr.map(function (word) {
-		let counter = 0;
-		for (let i = 0; i < array.length; i++) {
-			const element = array[i];
+	const alphabet = "abcdefghijklmnopqrstuvwxyz";
+	return arr.map((word) => (word.split("").filter((letter, i) => (letter.toLowerCase() === alphabet[i])).length));
+}
 
-		}
-	})
-	return arr.map(x => x.toLowerCase());
-};
+// option 2
+function solve(arr) {
+	var alphabet = "abcdefghijklmnopqrstuvwxyz";
+	return arr.map(function (word) {
+		return word.split("").filter(function (letter, i) {
+			return letter.toLowerCase() === alphabet[i];
+		}).length;
+	});
+}
