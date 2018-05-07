@@ -18,3 +18,8 @@
 // new_avg([14, 30, 5, 7, 9, 11, 15], 2) 
 // should raise an error (ValueError or invalid_argument or DomainError) 
 // or return `-1` or ERROR depending on the language
+
+
+function newAvg(arr, newavg) {
+   // your code 
+}
