@@ -20,6 +20,20 @@
 // or return `-1` or ERROR depending on the language
 
 
+// option 1
 function newAvg(arr, newavg) {
-   // your code 
+   let countArr = arr.length;
+   let sumArr = arr.reduce((x, y) => (x + y), 0);
+   let newTotal = (countArr + 1) * newavg;
+   let lastDon = Math.ceil(newTotal - sumArr);
+   if (lastDon <= 0) throw "ERROR";
+   //console.log(arr, newavg, countArr, sumArr, newTotal);
+   return lastDon;
+}
+
+// option 2
+function newAvg(arr, newavg) {
+   const newDonation = newavg * (arr.length + 1) - arr.reduce((x, y) => x + y, 0);
+   if (newDonation <= 0) throw "Less than 0";
+   return Math.ceil(newDonation);
 }
