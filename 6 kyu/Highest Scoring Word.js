@@ -11,5 +11,8 @@
 
 function high(x) {
    let words = x.split(' ');
-   console.log(words);
+   let wordScore = words.map(x => {
+      return x.split('');
+   });
+   console.log(words, wordScore);
 }
