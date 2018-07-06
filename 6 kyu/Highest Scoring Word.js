@@ -10,9 +10,17 @@
 
 
 function high(x) {
-   let words = x.split(' ');
-   let wordScore = words.map(x => {
-      return x.split('');
-   });
-   console.log(words, wordScore);
+	let words = x.split(' '),
+		maxScore = 0,
+		result = '';
+
+	for (let i = 0; i < array.length; i++) {
+		const element = array[i];
+
+	}
+
+	let wordScore = words.map(x => {
+		return x.split('');
+	});
+	console.log(words, wordScore);
 }

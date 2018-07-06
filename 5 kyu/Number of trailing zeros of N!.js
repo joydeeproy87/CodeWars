@@ -15,6 +15,4 @@
 // Hint: You're not meant to calculate the factorial. Find another way to find the number of zeros.
 
 
-function zeros(n) {
-
-}
+function zeros(n) {}
