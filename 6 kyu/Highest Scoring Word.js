@@ -9,6 +9,7 @@
 // All letters will be lowercase and all inputs will be valid.
 
 
+
 function high(x) {
 	const words = x.split(' ');
 	let maxScore = 0;
