@@ -10,17 +10,20 @@
 
 
 function high(x) {
-	let words = x.split(' '),
-		maxScore = 0,
-		result = '';
+	const words = x.split(' ');
+	let maxScore = 0;
+	let result = '';
 
-	for (let i = 0; i < array.length; i++) {
-		const element = array[i];
-
+	for (const element of words) {
+		let value = 0;
+		for (let j = 0; j < element.length; j++) {
+			value += element.charCodeAt(j) - 96;
+		}
+		if (value > maxScore) {
+			maxScore = value;
+			result = element;
+		}
 	}
 
-	let wordScore = words.map(x => {
-		return x.split('');
-	});
-	console.log(words, wordScore);
+	return result;
 }
