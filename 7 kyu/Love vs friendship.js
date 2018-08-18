@@ -9,4 +9,12 @@
 // The input will always be in lowercase and never be empty.
 
 
-function wordsToMarks(string) {}
+function wordsToMarks(string) {
+   let marks = string.split('');
+
+   for (let i = 0; i < string.length; i++) {
+      marks += string.charCodeAt(i);
+   }
+
+   return marks;
+}
