@@ -16,9 +16,11 @@ function high(x) {
 
 	for (const element of words) {
 		let value = 0;
+
 		for (let j = 0; j < element.length; j++) {
 			value += element.charCodeAt(j) - 96;
 		}
+
 		if (value > maxScore) {
 			maxScore = value;
 			result = element;
