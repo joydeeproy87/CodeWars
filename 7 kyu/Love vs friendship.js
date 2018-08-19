@@ -9,6 +9,16 @@
 // The input will always be in lowercase and never be empty.
 
 
+// option 1
+function wordsToMarks(s) {
+   let marks = 0;
+   for (let i = 0; i < s.length; i++) {
+      marks += s.charCodeAt(i) - 96;
+   }
+   return marks;
+}
+
+// option 2
 function wordsToMarks(s) {
    return s.split('')
       .map(x => x.charCodeAt(0) - 96)
