@@ -14,14 +14,3 @@ function wordsToMarks(s) {
       .map(x => x.charCodeAt(0) - 96)
       .reduce((a, b) => a + b);
 }
-
-function wordsToMarks(s) {
-   let marks = 0;
-   s = s.split('');
-
-   for (let i = 0; i < s.length; i++) {
-      marks += s.charCodeAt(i);
-   }
-
-   return marks;
-}
