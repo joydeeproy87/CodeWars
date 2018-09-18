@@ -27,7 +27,6 @@
 // NOTE: There will also be lists tested of lengths upwards of 10,000,000 elements. Be sure your code doesn't time out.
 
 
-
 var sum_pairs = function sum_pairs(ints, s) {
 	var seen = {};
 	var i = 0;
